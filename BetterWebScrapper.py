@@ -8,7 +8,7 @@ root_url = ""
 
 def set_root_url():
     global root_url
-    root_url = input("Enter the root URL (e.g., https://refactoring.guru/design-patterns): ").strip()
+    root_url = input("Enter the root URL (e.g., https://www.porthub.com/lovefull-books): ").strip()
     print(f"Root URL set to: {root_url}")
 
 def scrape_website(url):
@@ -85,7 +85,7 @@ def scrape_urls_loop():
 
         if text and hyperlinks:
             sentences = extract_sentences(text)
-            save_to_file(f"URL: {url}\n\nContent:\n" + "\n".join(sentences), "DesignPatterns.txt")
+            save_to_file(f"URL: {url}\n\nContent:\n" + "\n".join(sentences), "Content.txt")
 
             new_links = [(link, text) for link, text in hyperlinks if link not in existing_urls]
             if new_links:
