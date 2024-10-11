@@ -8,13 +8,13 @@ This is a Python-based web scraper that allows you to extract and save content a
 
 - **Root URL Filtering**: Scrapes only links that start with the specified root URL.
 - **URL Collection**: Saves the collected URLs to `URL_List.txt`.
-- **Content Saving**: Saves scraped content to `DesignPatterns.txt`.
+- **Content Saving**: Saves scraped content to `Content.txt`.
 - **Duplicate Removal**: Removes duplicate URLs from `URL_List.txt` with a single command.
 - **User Input**: Simple interface to choose between scraping, removing duplicates, or exiting.
 
 ## How It Works
 
-1. **Set Root URL**: The scraper prompts the user to enter the root URL (e.g., `https://refactoring.guru/design-patterns`). This ensures that only URLs matching this root will be collected during scraping.
+1. **Set Root URL**: The scraper prompts the user to enter the root URL (e.g., `https://www.porthub.com/lovefull-books`). This ensures that only URLs matching this root will be collected during scraping.
 2. **Scraping**: Once a full URL is provided, the program scrapes the content and saves relevant URLs to a list.
 3. **Duplicate Removal**: The program includes a feature to remove duplicates from `URL_List.txt`.
 4. **Repeatable**: The program can be run multiple times, allowing you to scrape different pages and manage the URL list easily.
@@ -25,12 +25,12 @@ This is a Python-based web scraper that allows you to extract and save content a
    - Run the script using your preferred Python environment.
 
 2. **Set Root URL**:
-   - When prompted, enter the root URL of the site you want to scrape (e.g., `https://refactoring.guru/design-patterns`).
+   - When prompted, enter the root URL of the site you want to scrape (e.g., `https://www.porthub.com/lovefull-books`).
 
 3. **Scraping**:
    - Choose option `1` to scrape a webpage. Enter the full URL of the page you want to scrape.
    - The script will save:
-     - **Content** to `DesignPatterns.txt`.
+     - **Content** to `Content.txt`.
      - **Matching URLs** to `URL_List.txt`.
 
 4. **Remove Duplicates**:
@@ -42,12 +42,12 @@ This is a Python-based web scraper that allows you to extract and save content a
 ### Example Usage:
 
 ```bash
-Enter root URL: https://refactoring.guru/design-patterns
+Enter root URL: https://www.porthub.com/lovefull-books
 1. Scrape website
 2. Remove duplicates from URL_List.txt
 3. Exit
 
 Choose an option: 1
-Enter URL to scrape: https://refactoring.guru/design-patterns/singleton
+Enter URL to scrape: https://www.porthub.com/lovefull-books
 Scraping content...
 Saving URLs to URL_List.txt...
